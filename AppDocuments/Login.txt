@@ -1,0 +1,29 @@
+Step 1: Create Auth Context
+This step creates a context to manage the authentication state throughout your application.
+
+Step 2: Use Auth Context in Your App
+This step shows how to wrap your entire application with the AuthProvider to make the authentication 
+state available throughout the app. Additionally, it introduces a PrivateRoute component to protect routes.
+Explanation of Step 2:
+AuthProvider: This wraps the entire application to provide authentication state.
+PrivateRoute: This ensures that protected routes are only accessible if the user is authenticated. If not, it redirects to the login page.
+Routes: Define the routes for your application, using PrivateRoute for protected routes.
+
+Step 3: Update Navbar to Use Auth Context
+The Navbar component conditionally renders the logout button based on the authentication state.
+Explanation of Navbar:
+It accesses the authentication state using useContext.
+Conditionally renders the logout button based on whether the user is authenticated.
+
+Step 4: Update Login Component to Use Auth Context
+The Login component uses the login function from the AuthContext to set the authentication state upon successful login.
+Explanation of Login:
+Handles user login and sets the authentication state using the login function from AuthContext.
+Redirects to the dashboard upon successful login.
+
+ 
+Step 5: Implementing Protected Routes
+This step ensures that protected routes (like the Dashboard) are only accessible if the user is authenticated. This part is essentially covered in Step 2 with the PrivateRoute component.
+
+Explanation of Step 5:
+PrivateRoute: Acts as a guard for protected routes, ensuring only authenticated users can access them.

@@ -16,7 +16,7 @@ const BookList = () => {
   }, []);
 
   return (
-    <div>
+    <div  className='container'>
       <h2>Books</h2>
       <ul>
         {books.map(book => (

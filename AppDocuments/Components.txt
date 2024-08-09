@@ -1,0 +1,5 @@
+Components 
+
+The ClickOutside component listens for clicks outside of its wrapped content (or a specified exception element) 
+and then triggers a provided onClick callback function when such an outside click is detected. 
+This is useful for closing elements like dropdowns or modals when the user clicks outside of them.

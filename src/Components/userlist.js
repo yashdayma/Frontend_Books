@@ -16,7 +16,7 @@ const UserList = () => {
   }, []);
 
   return (
-    <div>
+    <div className='container'>
       <h2>Users</h2>
       <ul>
         {users.map(user => (
